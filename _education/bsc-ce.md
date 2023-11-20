@@ -15,5 +15,5 @@ Related Courses:
 - Fundamentals of Data Mining (20/20)
 - Fundamentals of Information Retrieval and Web Search (19.25/20)
 "
-order: 1
+order: 3
 ---
