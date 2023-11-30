@@ -12,15 +12,15 @@ paginate_path: "/blog/page:num/"
 social:
   email: 
     visibility: true
-    mail: contact@arnob.me
+    mail: prisashahbi@gmail.com
   github: 
     visibility: true
-    handle: arnobk
+    handle: parissashahabi
   linkedin: 
     visibility: true
-    handle: arnobkarmokar
+    handle: parisa-shahabi
   twitter: 
-    visibility: true
+    visibility: false
     handle: arnobdotme
 
 # Collections

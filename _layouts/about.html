@@ -27,11 +27,7 @@ layout: default
                             <ul class="hollow-bullet-points">
                             {% assign is_list_started = true %}
                         {% endunless %}
-                        {% if trimmed_line contains '[Interkarsolar website]' %}
-                            <li>{{ trimmed_line | replace: '[Interkarsolar website]', 'Interkarsolar website' | replace: '(', '<a href="' | replace: ')', '">' | replace: ']', '</a>' }}</li>
-                        {% else %}
-                            <li>{{ trimmed_line | remove: '-' }}</li>
-                        {% endif %}
+                        <li>{{ trimmed_line | remove: '-' }}</li>
                     {% endif %}
                 {% endfor %}
                 {% if is_list_started %}
@@ -43,7 +39,6 @@ layout: default
     {% endfor %}
 </div>
 {% endif %}
-
 
 {% if site.collection_option['education']['visibility'] == true %}
 <div class="ap-line"></div>
