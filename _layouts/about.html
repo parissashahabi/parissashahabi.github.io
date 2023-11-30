@@ -17,22 +17,14 @@ layout: default
         {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
                 {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
-                {% assign is_list_started = false %}
+                <ul class="hollow-bullet-points">
                 {% for line in excerpt_lines %}
                     {% assign trimmed_line = line | strip %}
-                    {% if forloop.first %}
-                        <p>{{ trimmed_line }}</p>
-                    {% elsif trimmed_line != '' %}
-                        {% unless is_list_started %}
-                            <ul class="hollow-bullet-points">
-                            {% assign is_list_started = true %}
-                        {% endunless %}
+                    {% if trimmed_line != '' %}
                         <li>{{ trimmed_line }}</li>
                     {% endif %}
                 {% endfor %}
-                {% if is_list_started %}
-                    </ul>
-                {% endif %}
+                </ul>
             </div>
         {% endif %}
     </div>
