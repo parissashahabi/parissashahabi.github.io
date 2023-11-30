@@ -1,7 +1,7 @@
 name: Parisa Shahabinejad
 tagline: Computer Engineering Student
 career-objective: I am an enthusiastic computer engineering student with a keen interest in machine learning and solving complex problems using deep learning. Along with my technical skills, I also have a creative side that loves painting and playing basketball. Cats are my favorite companions as they always cheer me up.
-color-theme: red # red or blue
+color-theme: blue # red or blue
 avatar-filename: avatar.JPG
 url: parissashahabi.github.io
 baseurl: /
@@ -32,8 +32,8 @@ collections:
     output: false
     sort_by: order
   projects:
-    output: true
-    sort_by: year
+    output: false
+    sort_by: order
   skills:
     output: false
     sort_by: order
@@ -53,7 +53,7 @@ collections:
 # About Page Options
 collection_option:
   experience: 
-    label: Professional Experience
+    label: Experience
     visibility: true
   education: 
     label: Education
