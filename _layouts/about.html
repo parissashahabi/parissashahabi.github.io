@@ -74,7 +74,7 @@ layout: default
     {% assign sorted_items = site.projects | sort: 'order' %}
     {% for project in sorted_items %}
     <div class="ap-project">
-        <a class="ap-project-title" href="{{project.url}}">{{project.title}}</a>
+        <p class="ap-project-title">{{project.title}}</p>
         <p class="ap-project-excerpt">{{project.excerpt}}</p>
         <p class="ap-project-tags">
             {% for tag in project.tags %}
@@ -168,8 +168,7 @@ layout: default
     {% assign sorted_items = site.certifications | sort: 'order' %}
     {% for certificate in sorted_items %}
     <div class="ap-certification">
-        <a class="ap-certification-title" href="{{certificate.certificate_url}}"
-            target="_blank">{{certificate.title}}</a>
+        <p class="ap-certification-title">{{certificate.title}}</p>
         <p class="ap-certification-institute">{{certificate.institute}}</p>
         <p class="ap-certification-year">{{certificate.year}}</p>
         <p class="ap-certification-excerpt">{{certificate.excerpt}}</p>
