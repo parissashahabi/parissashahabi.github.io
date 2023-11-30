@@ -9,16 +9,30 @@ layout: default
 <div class="ap-line"></div>
 <!-- WORK EXPERIENCE -->
 <div class="ap-block">
-    <p class="ap-subtitle">{{site.collection_option['experience']['label']}}</p>
+    <p class="ap-subtitle">{{ site.collection_option['experience']['label'] }}</p>
     {% for experience in site.experience %}
     <div class="ap-experience">
-        <p class="ap-experience-title">{{experience.title}}</p>
-        <p class="ap-experience-year">{{experience.duration}}</p>
-        <p class="ap-experience-excerpt">{{experience.excerpt}}</p>
+        <p class="ap-experience-title">{{ experience.title }}</p>
+        <p class="ap-experience-year">{{ experience.duration }}</p>
+        {% if experience.excerpt %}
+            <div class="ap-experience-excerpt">
+                {% assign excerpt_lines = experience.excerpt | split: '\n' %}
+                {% for line in excerpt_lines %}
+                    {% if line contains '-' %}
+                        {% if forloop.first %}<ul>{% endif %}
+                        <li>{{ line | remove: '-' | lstrip }}</li>
+                        {% if forloop.last %}</ul>{% endif %}
+                    {% else %}
+                        <p>{{ line }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
     {% endfor %}
 </div>
 {% endif %}
+
 
 {% if site.collection_option['education']['visibility'] == true %}
 <div class="ap-line"></div>

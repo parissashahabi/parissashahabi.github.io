@@ -570,7 +570,12 @@ a:hover {
     }
 }
 
+.hollow-bullet-points {
+    list-style-type: circle;        /* Hollow bullet points */
+    list-style-position: inside;    /* Position bullets inside the list item area */
+    padding-left: 20px;             /* Indentation of the list */
+}
+
 .hollow-bullet-points li {
-    list-style-type: circle;
-    padding-left: 20px;
+    margin-left: 10px;              /* Additional indentation for list items if needed */
 }
