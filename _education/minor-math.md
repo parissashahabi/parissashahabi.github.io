@@ -11,5 +11,5 @@ courses:
   - Probability I
   - Linear Optimization
   - Fundamentals of Mathematical Sciences
-order: 2
+order: 3
 ---

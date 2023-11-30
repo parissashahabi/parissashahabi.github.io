@@ -31,14 +31,14 @@ layout: default
         <p class="ap-education-institute">{{ education.institute }}, {{ education.location }}</p>
         <p class="ap-education-year">{{ education.duration }}</p>
         {% if education.gpa %}
-            <p class="ap-education-gpa">GPA: {{ education.gpa }}</p>
+            <p class="ap-education-gpa">Overall GPA: {{ education.gpa }}</p>
         {% endif %}
         {% if education.highlight %}
             <p class="ap-education-highlight">{{ education.highlight }}</p>
         {% endif %}
         {% if education.courses %}
             <p class="ap-education-courses">Courses:</p>
-            <ul>
+            <ul class="hollow-bullet-points">
                 {% for course in education.courses %}
                 <li>{{ course }}</li>
                 {% endfor %}

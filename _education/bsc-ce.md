@@ -3,7 +3,7 @@ degree: B.Sc. in Computer Engineering
 institute: University of Isfahan
 location: Isfahan, Iran
 duration: 2019 - Present
-gpa: "Overall GPA: 18.26/20.00 (3.82/4)"
+gpa: "18.26/20.00 (3.82/4)"
 highlight: 3rd highest GPA among 100 B.Sc. Computer Engineering students (class of 2023)
 courses:
   - Artificial Intelligence and Expert Systems (20/20)
