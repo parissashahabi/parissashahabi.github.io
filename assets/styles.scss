@@ -242,6 +242,32 @@ a:hover {
     padding: 2px 4px;
 }
 
+.ap-demo-tags {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7068c3;
+    margin: 6px 0px;
+}
+
+.ap-demo-tags .ap-demo-chip {
+    border: 1px solid $link;
+    border-radius: 5px;
+    padding: 2px 4px;
+    background-color: $link;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+// /* Optional: Hover effect */
+// .ap-skill-tags .ap-skill-chip:hover {
+//     background-color: darken($link, 10%);
+//     text-decoration: none;
+// }
+
+
 .ap-publication {
     margin: 16px 0px;
 }

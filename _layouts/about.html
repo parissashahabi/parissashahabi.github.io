@@ -88,6 +88,11 @@ layout: default
             <span class="ap-project-chip">{{tag}}</span>
             {% endfor %}
         </p>
+        {% if project.demo %}
+        <p class="ap-demo-tags">
+            <p class="ap-demo-chip">{{ project.demo }}</p>
+        </p>
+        {% endif %}
     </div>
     {% endfor %}
 
