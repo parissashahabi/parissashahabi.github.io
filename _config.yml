@@ -45,7 +45,7 @@ collections:
     sort_by: order
   certifications:
     output: false
-    sort_by: year
+    sort_by: order
   achievements:
     output: false
     sort_by: order
@@ -71,7 +71,7 @@ collection_option:
     label: Test Scores
     visibility: true
   certifications: 
-    label: Certifications
+    label: Online Courses
     visibility: true
   achievements: 
     label: Teaching Experience
