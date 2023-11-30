@@ -48,7 +48,14 @@ layout: default
     <div class="ap-experience">
         <p class="ap-experience-title">{{ experience.title }}</p>
         <p class="ap-experience-year">{{ experience.duration }}</p>
-        {% if experience.excerpt %}
+        {% if experience.activities %}
+            <ul class="hollow-bullet-points">
+                {% for activity in experience.activities %}
+                <li>{{ activity }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <!-- {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
                 {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
                 <ul class="hollow-bullet-points">
@@ -60,7 +67,7 @@ layout: default
                 {% endfor %}
                 </ul>
             </div>
-        {% endif %}
+        {% endif %} -->
     </div>
     {% endfor %}
 </div>
