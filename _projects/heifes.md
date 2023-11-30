@@ -13,6 +13,6 @@ tags: [
     Scrum,
     # UML,
   ]
-demo: <button class="ap-demo-chip" onclick="location.href='https://heifes.vercel.app/'">Heifes Website</button>
+demo: <button class="ap-demo-chip" onclick="window.open('https://heifes.vercel.app/', '_blank')">Heifes Website</button>
 order: 11
 ---

@@ -55,6 +55,9 @@ layout: default
                 {% endfor %}
             </ul>
         {% endif %}
+        {% if experience.demo %}
+        <p class="ap-demo-tags">{{experience.demo}}</p>
+        {% endif %}
         <!-- {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
                 {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
