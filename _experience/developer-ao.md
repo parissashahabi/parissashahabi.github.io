@@ -1,5 +1,5 @@
 ---
-title: Junior Frontend Developer, Ahan Online
+title: Junior Frontend Developer, <a href="https://ahanonline.com/">Ahan Online</a>
 duration: August 2021 - March 2022
 excerpt: |
   As a Junior Frontend Developer at Ahan Online, my responsibilities and achievements included:
