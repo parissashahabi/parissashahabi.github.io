@@ -17,13 +17,13 @@ layout: default
         {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
                 {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
-                <ul>
                 {% for line in excerpt_lines %}
-                    {% if line != '' %}
-                        <li>{{ line | strip }}</li>
+                    {% if forloop.first %}
+                        <p>{{ line | strip }}</p>
+                    {% elsif line != '' %}
+                        <li>{{ line | remove: '-' | strip }}</li>
                     {% endif %}
                 {% endfor %}
-                </ul>
             </div>
         {% endif %}
     </div>
