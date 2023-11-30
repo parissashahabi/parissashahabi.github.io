@@ -161,16 +161,17 @@ layout: default
 <div class="ap-line"></div>
 <!-- ACHIEVEMENTS -->
 <div class="ap-block">
-    <p class="ap-subtitle">{{ site.collection_option['achievements']['label'] }}</p>
+    <p class="ap-subtitle">{{site.collection_option['achievements']['label']}}</p>
     {% for achievement in site.achievements reversed %}
     <div class="ap-achievement">
-        <p class="ap-achievement-title">{{ achievement.title }}</p>
-        <p class="ap-achievement-year">{{ achievement.year }}</p>
+        <p class="ap-achievement-title">{{achievement.title}}</p>
+        <p class="ap-achievement-year">{{achievement.year}}</p>
         <ul class="hollow-bullet-points">
             {% for item in achievement.excerpt %}
             <li>{{ item }}</li>
             {% endfor %}
         </ul>
+        <p class="ap-achievement-excerpt">{{achievement.excerpt}}</p>
     </div>
     {% endfor %}
 </div>
