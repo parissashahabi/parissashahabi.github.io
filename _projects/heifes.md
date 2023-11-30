@@ -14,6 +14,6 @@ tags:
     Scrum,
     UML,
   ]
-demo: <a href="https://heifes.vercel.app/" class="ap-demo-chip">Heifes Website</a>
+demo: <button class="ap-demo-chip" onclick="location.href='https://heifes.vercel.app/'">Heifes Website</button>
 order: 11
 ---

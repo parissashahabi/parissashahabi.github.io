@@ -259,14 +259,13 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 // /* Optional: Hover effect */
 // .ap-skill-tags .ap-skill-chip:hover {
-//     background-color: darken($link, 10%);
-//     text-decoration: none;
+//     background-color: darken($link, 10%); /* Darken the background on hover */
 // }
-
 
 .ap-publication {
     margin: 16px 0px;
