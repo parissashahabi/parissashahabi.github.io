@@ -24,16 +24,23 @@ layout: default
 <div class="ap-line"></div>
 <!-- EDUCATION -->
 <div class="ap-block">
-    <p class="ap-subtitle">{{site.collection_option['education']['label']}}</p>
+    <p class="ap-subtitle">{{ site.collection_option['education']['label'] }}</p>
     {% for education in site.education %}
     <div class="ap-education">
-        <p class="ap-education-degree">{{education.degree}}</p>
-        <p class="ap-education-institute">{{education.institute}}</p>
-        <p class="ap-education-year">{{education.duration}}</p>
-        <p class="ap-education-excerpt">{{education.excerpt}}</p>
+        <p class="ap-education-degree">{{ education.degree }}</p>
+        <p class="ap-education-institute">{{ education.institute }}, {{ education.location }}</p>
+        <p class="ap-education-year">{{ education.duration }}</p>
+        <p class="ap-education-gpa">GPA: {{ education.gpa }}</p>
+        <p class="ap-education-highlight">{{ education.highlight }}</p>
+        <p class="ap-education-courses">Courses:</p>
+        <ul>
+            {% for course in education.courses %}
+            <li>{{ course }}</li>
+            {% endfor %}
+        </ul>
+        <p class="ap-education-additional">{{ education.additional_info | join: '; ' }}</p>
     </div>
     {% endfor %}
-
 </div>
 {% endif %}
 
