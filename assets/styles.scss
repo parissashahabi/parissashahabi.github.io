@@ -246,7 +246,6 @@ a:hover {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #7068c3;
     margin: 6px 0px;
 }
 
@@ -259,10 +258,11 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     margin-right: 5px;
+    cursor: pointer !important;
 }
 
-.ap-skill-tags .ap-skill-chip:hover {
-    background-color: #7068c3; /* Darken the background on hover */
+.ap-demo-tags .ap-demo-chip:hover {
+    background-color: #635cae; /* Darken the background on hover */
 }
 
 .ap-publication {
