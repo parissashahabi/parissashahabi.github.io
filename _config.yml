@@ -1,5 +1,5 @@
 name: Parisa Shahabinejad
-tagline: Computer Engineering Student
+tagline: Computer Engineering Student | Minor in Mathematics
 career-objective: I am an enthusiastic computer engineering student with a keen interest in machine learning and solving complex problems using deep learning. Along with my technical skills, I also have a creative side that loves painting and playing basketball. Cats are my favorite companions as they always cheer me up.
 color-theme: blue # red or blue
 avatar-filename: avatar.JPG
@@ -66,7 +66,7 @@ collection_option:
     visibility: true
   publications: 
     label: Publications
-    visibility: true
+    visibility: false
   volunteerexperience: 
     label: Test Scores
     visibility: true
@@ -80,7 +80,7 @@ collection_option:
 navigation:
 - title: About
   url: /
-- title: Blog
+- title: CV
   url: /blog/
 - title: Contact
   url: /contact

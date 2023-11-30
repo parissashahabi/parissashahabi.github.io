@@ -1,5 +1,10 @@
 ---
 category: Software Engineering
-details: Familiar with software design patterns, SOLID design principles, and software development methodologies such as Agile
+tags:
+  [
+    Software Design Patterns,
+    SOLID design principles,
+    Software Development Methodologies,
+  ]
 order: 4
 ---

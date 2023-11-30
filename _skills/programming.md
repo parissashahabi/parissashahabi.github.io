@@ -1,5 +1,5 @@
 ---
 category: Programming Languages
-details: Python, C++, JavaScript, and TypeScript
+tags: [Python, C++, JavaScript, TypeScript]
 order: 2
 ---

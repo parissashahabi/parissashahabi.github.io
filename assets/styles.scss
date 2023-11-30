@@ -228,6 +228,20 @@ a:hover {
     padding: 2px 4px;
 }
 
+.ap-skill-tags {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #575198;
+    margin: 6px 0px;
+}
+
+.ap-skill-tags .ap-skill-chip {
+    border: 1px solid $link;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
 .ap-publication {
     margin: 16px 0px;
 }
@@ -578,4 +592,5 @@ a:hover {
 
 .hollow-bullet-points li {
     margin-left: 10px;
+    margin-bottom: 5px;
 }

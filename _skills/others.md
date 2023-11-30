@@ -1,5 +1,5 @@
 ---
 category: Others
-details: SQL, MongoDB, Git, Jupyter, Scrum, Algorithms, Data Structures, Object-Oriented Programming
+tags: [SQL, MongoDB, Git, Jupyter, Scrum, Algorithms, Data Structures, OOP]
 order: 6
 ---

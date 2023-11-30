@@ -27,7 +27,7 @@ layout: default
                             <ul class="hollow-bullet-points">
                             {% assign is_list_started = true %}
                         {% endunless %}
-                        <li>{{ trimmed_line | remove: '-' }}</li>
+                        <li>{{ trimmed_line }}</li>
                     {% endif %}
                 {% endfor %}
                 {% if is_list_started %}
@@ -53,6 +53,9 @@ layout: default
         {% if education.gpa %}
             <p class="ap-education-gpa">Overall GPA: {{ education.gpa }}</p>
         {% endif %}
+        {% if education.additional_info %}
+            <p class="ap-education-additional">{{ education.additional_info }}</p>
+        {% endif %}
         {% if education.highlight %}
             <p class="ap-education-highlight">{{ education.highlight }}</p>
         {% endif %}
@@ -63,9 +66,6 @@ layout: default
                 <li>{{ course }}</li>
                 {% endfor %}
             </ul>
-        {% endif %}
-        {% if education.additional_info %}
-            <p class="ap-education-additional">{{ education.additional_info }}</p>
         {% endif %}
     </div>
     {% endfor %}
@@ -80,7 +80,11 @@ layout: default
     {% for skill in site.skills %}
     <div class="ap-skill">
         <p class="ap-skill-category">{{skill.category}}</p>
-        <p class="ap-skill-details">{{skill.details}}</p>
+        <p class="ap-skill-tags">
+            {% for tag in skill.tags %}
+            <span class="ap-skill-chip">{{tag}}</span>
+            {% endfor %}
+        </p>
     </div>
     {% endfor %}
 </div>
@@ -129,7 +133,7 @@ layout: default
     {% for experience in site.volunteerexperience %}
     <div class="ap-experience">
         <p class="ap-experience-title">{{experience.title}}</p>
-        <p class="ap-experience-year">{{experience.duration}}</p>
+        <p class="ap-experience-year">{{experience.score}}</p>
         <p class="ap-experience-excerpt">{{experience.excerpt}}</p>
     </div>
     {% endfor %}
@@ -157,13 +161,18 @@ layout: default
 <div class="ap-line"></div>
 <!-- ACHIEVEMENTS -->
 <div class="ap-block">
-    <p class="ap-subtitle">{{site.collection_option['achievements']['label']}}</p>
+    <p class="ap-subtitle">{{ site.collection_option['achievements']['label'] }}</p>
     {% for achievement in site.achievements reversed %}
     <div class="ap-achievement">
-        <p class="ap-achievement-title">{{achievement.title}}</p>
-        <p class="ap-achievement-year">{{achievement.year}}</p>
-        <p class="ap-achievement-excerpt">{{achievement.excerpt}}</p>
+        <p class="ap-achievement-title">{{ achievement.title }}</p>
+        <p class="ap-achievement-year">{{ achievement.year }}</p>
+        <ul class="ap-achievement-excerpt">
+            {% for point in achievement.excerpt %}
+            <li>{{ point }}</li>
+            {% endfor %}
+        </ul>
     </div>
     {% endfor %}
 </div>
 {% endif %}
+
