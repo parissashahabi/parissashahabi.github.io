@@ -30,15 +30,23 @@ layout: default
         <p class="ap-education-degree">{{ education.degree }}</p>
         <p class="ap-education-institute">{{ education.institute }}, {{ education.location }}</p>
         <p class="ap-education-year">{{ education.duration }}</p>
-        <p class="ap-education-gpa">GPA: {{ education.gpa }}</p>
-        <p class="ap-education-highlight">{{ education.highlight }}</p>
-        <p class="ap-education-courses">Courses:</p>
-        <ul>
-            {% for course in education.courses %}
-            <li>{{ course }}</li>
-            {% endfor %}
-        </ul>
-        <p class="ap-education-additional">{{ education.additional_info }}</p>
+        {% if education.gpa %}
+            <p class="ap-education-gpa">GPA: {{ education.gpa }}</p>
+        {% endif %}
+        {% if education.highlight %}
+            <p class="ap-education-highlight">{{ education.highlight }}</p>
+        {% endif %}
+        {% if education.courses %}
+            <p class="ap-education-courses">Courses:</p>
+            <ul>
+                {% for course in education.courses %}
+                <li>{{ course }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% if education.additional_info %}
+            <p class="ap-education-additional">{{ education.additional_info }}</p>
+        {% endif %}
     </div>
     {% endfor %}
 </div>

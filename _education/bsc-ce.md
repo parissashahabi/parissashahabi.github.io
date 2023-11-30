@@ -17,5 +17,5 @@ courses:
   - Theory of Formal Languages and Automata (18.5/20)
   - Computer Networks (19.2/20)
 additional_info: "Last two years' GPA: 19.27/20.00 (3.9/4)"
-order: 3
+order: 1
 ---
