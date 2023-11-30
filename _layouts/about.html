@@ -58,6 +58,13 @@ layout: default
         {% if experience.demo %}
         <p class="ap-demo-tags">{{experience.demo}}</p>
         {% endif %}
+        {% if experience.tags %}
+        <p class="ap-skill-tags">
+            {% for tag in experience.tags %}
+            <span class="ap-skill-chip">{{tag}}</span>
+            {% endfor %}
+        </p>
+        {% endif %}
         <!-- {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
                 {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
@@ -185,6 +192,9 @@ layout: default
         <p class="ap-certification-institute">{{certificate.institute}}</p>
         <p class="ap-certification-year">{{certificate.year}}</p>
         <p class="ap-certification-excerpt">{{certificate.excerpt}}</p>
+        {% if certificate.image %}
+            <img src="{{ certificate.image }}" alt="{{ certificate.title }} Certificate">
+        {% endif %}
     </div>
     {% endfor %}
 </div>

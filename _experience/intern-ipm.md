@@ -10,5 +10,13 @@ activities:
   - Implemented physics simulation to replicate and calculate in-game physics interactions
   - Optimized physics parameters via genetic algorithms for accurate in-game simulation
 demo: <button class="ap-demo-chip" onclick="window.open('https://github.com/parissashahabi/Soccer-Stars-Game-Bot', '_blank')">GeitHub Repo</button>
+tags:
+  [
+    Computer Vision,
+    Object Detection,
+    OpenCV,
+    Evolutionary Algorithms,
+    Genetic Algorithms,
+  ]
 order: 1
 ---
