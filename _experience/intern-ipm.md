@@ -1,5 +1,5 @@
 ---
-title: Internship, <a href="https://ipm.ac.ir/">IPM Institute For Research in Fundamental Sciences</a>
+title: Internship, <a href="https://ipm.ac.ir/" target="_blank">IPM Institute For Research in Fundamental Sciences</a>
 duration: June 2023 - September 2023
 activities:
   - Developed an intelligent agent for the game "Soccer Stars" to compete with human players

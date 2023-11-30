@@ -1,5 +1,5 @@
 ---
-title: Volunteer Developer and Instructor, <a href="https://karsooghmehregan.ir/">Mehregan Workshop</a>
+title: Volunteer Developer and Instructor, <a href="https://karsooghmehregan.ir/" target="_blank">Mehregan Workshop</a>
 duration: September 2020 - May 2021
 activities:
   - Contributed to the development of the Interkarsolar website as a Frontend Developer, utilizing React and Material-UI

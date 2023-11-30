@@ -1,5 +1,5 @@
 ---
-title: Junior Frontend Developer, <a href="https://ahanonline.com/">Ahan Online</a>
+title: Junior Frontend Developer, <a href="https://ahanonline.com/" target="_blank">Ahan Online</a>
 duration: August 2021 - March 2022
 activities:
   - Developed high-performance, reusable components using React, TypeScript, and Next.js with a special focus on code readability and maintainability
