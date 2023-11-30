@@ -1,5 +1,5 @@
 ---
-category: Programming
-details: C++, Python, Tcl, Matlab, PHP, NodeJS, Dart
-order: 1
+category: Programming Languages
+details: Python, C++, JavaScript, and TypeScript
+order: 2
 ---

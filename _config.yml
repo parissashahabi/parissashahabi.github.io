@@ -53,7 +53,7 @@ collections:
 # About Page Options
 collection_option:
   experience: 
-    label: Experience
+    label: Professional Experience
     visibility: true
   education: 
     label: Education
@@ -62,7 +62,7 @@ collection_option:
     label: Projects
     visibility: true
   skills: 
-    label: Technical Skills
+    label: Skills
     visibility: true
   publications: 
     label: Publications
