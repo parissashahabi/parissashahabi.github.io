@@ -10,7 +10,8 @@ layout: default
 <!-- EDUCATION -->
 <div class="ap-block">
     <p class="ap-subtitle">{{ site.collection_option['education']['label'] }}</p>
-    {% for education in site.education %}
+    {% assign sorted_items = site.education | sort: 'order' %}
+    {% for education in sorted_items %}
     <div class="ap-education">
         <p class="ap-education-degree">{{ education.degree }}</p>
         <p class="ap-education-institute">{{ education.institute }}, {{ education.location }}</p>

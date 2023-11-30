@@ -218,12 +218,12 @@ a:hover {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #444444;
+    color: #7068c3;
     margin: 6px 0px;
 }
 
 .ap-project-tags .ap-project-chip {
-    border: 1px solid #8f8f8f;
+    border: 1px solid $link;
     border-radius: 5px;
     padding: 2px 4px;
 }
