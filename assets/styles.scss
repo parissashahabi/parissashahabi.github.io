@@ -1,9 +1,9 @@
 ---
 ---
 {% if site.color-theme == "blue" %}
-$link: #0099ff;
+$link: #7c73d9;
 {% elsif site.color-theme == "red" %}
-$link: #862B0D;
+$link: #9a788d;
 {% endif %}
 
 * {
