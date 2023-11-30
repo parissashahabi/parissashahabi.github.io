@@ -16,16 +16,14 @@ layout: default
         <p class="ap-experience-year">{{ experience.duration }}</p>
         {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
-                {% assign excerpt_lines = experience.excerpt | split: '\n' %}
+                {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
+                <ul>
                 {% for line in excerpt_lines %}
-                    {% if line contains '-' %}
-                        {% if forloop.first %}<ul>{% endif %}
-                        <li>{{ line | remove: '-' | lstrip }}</li>
-                        {% if forloop.last %}</ul>{% endif %}
-                    {% else %}
-                        <p>{{ line }}</p>
+                    {% if line != '' %}
+                        <li>{{ line | strip }}</li>
                     {% endif %}
                 {% endfor %}
+                </ul>
             </div>
         {% endif %}
     </div>
