@@ -43,7 +43,8 @@ layout: default
 <!-- WORK EXPERIENCE -->
 <div class="ap-block">
     <p class="ap-subtitle">{{ site.collection_option['experience']['label'] }}</p>
-    {% for experience in site.experience %}
+    {% assign sorted_items = site.experience | sort: 'order' %}
+    {% for experience in sorted_items %}
     <div class="ap-experience">
         <p class="ap-experience-title">{{ experience.title }}</p>
         <p class="ap-experience-year">{{ experience.duration }}</p>
@@ -70,7 +71,8 @@ layout: default
 <!-- PROJECTS -->
 <div class="ap-block">
     <p class="ap-subtitle">{{site.collection_option['projects']['label']}}</p>
-    {% for project in site.projects reversed %}
+    {% assign sorted_items = site.projects | sort: 'order' %}
+    {% for project in sorted_items %}
     <div class="ap-project">
         <a class="ap-project-title" href="{{project.url}}">{{project.title}}</a>
         <p class="ap-project-excerpt">{{project.excerpt}}</p>
@@ -90,12 +92,13 @@ layout: default
 <!-- ACHIEVEMENTS -->
 <div class="ap-block">
     <p class="ap-subtitle">{{site.collection_option['achievements']['label']}}</p>
-    {% for achievement in site.achievements reversed %}
+    {% assign sorted_items = site.achievements | sort: 'order' %}
+    {% for achievement in sorted_items %}
     <div class="ap-achievement">
         <p class="ap-achievement-title">{{achievement.title}}</p>
         <p class="ap-achievement-year">{{achievement.year}}</p>
         {% if achievement.activities %}
-            <p class="ap-education-courses">Activities:</p>
+            <!-- <p class="ap-education-courses">Activities:</p> -->
             <ul class="hollow-bullet-points">
                 {% for activity in achievement.activities %}
                 <li>{{ activity }}</li>
@@ -112,7 +115,8 @@ layout: default
 <!-- SKILLS -->
 <div class="ap-block">
     <p class="ap-subtitle">{{site.collection_option['skills']['label']}}</p>
-    {% for skill in site.skills %}
+    {% assign sorted_items = site.skills | sort: 'order' %}
+    {% for skill in sorted_items %}
     <div class="ap-skill">
         <p class="ap-skill-category">{{skill.category}}</p>
         <p class="ap-skill-tags">
@@ -130,7 +134,8 @@ layout: default
 <!-- VOLUNTEER EXPERIENCE -->
 <div class="ap-block">
     <p class="ap-subtitle">{{site.collection_option['volunteerexperience']['label']}}</p>
-    {% for experience in site.volunteerexperience %}
+    {% assign sorted_items = site.volunteerexperience | sort: 'order' %}
+    {% for experience in sorted_items %}
     <div class="ap-experience">
         <p class="ap-experience-title">{{experience.title}}</p>
         <p class="ap-experience-year">{{experience.score}}</p>
@@ -160,7 +165,8 @@ layout: default
 <!-- CERTIFICATIONS -->
 <div class="ap-block">
     <p class="ap-subtitle">{{site.collection_option['certifications']['label']}}</p>
-    {% for certificate in site.certifications reversed %}
+    {% assign sorted_items = site.certifications | sort: 'order' %}
+    {% for certificate in sorted_items %}
     <div class="ap-certification">
         <a class="ap-certification-title" href="{{certificate.certificate_url}}"
             target="_blank">{{certificate.title}}</a>
