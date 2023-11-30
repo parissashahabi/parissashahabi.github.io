@@ -17,20 +17,27 @@ layout: default
         {% if experience.excerpt %}
             <div class="ap-experience-excerpt">
                 {% assign excerpt_lines = experience.excerpt | newline_to_br | split: '<br />' %}
+                {% assign is_list_started = false %}
                 {% for line in excerpt_lines %}
                     {% if forloop.first %}
                         <p>{{ line | strip }}</p>
                     {% elsif line != '' %}
+                        {% unless is_list_started %}
+                            <ul class="hollow-bullet-points">
+                            {% assign is_list_started = true %}
+                        {% endunless %}
                         <li>{{ line | remove: '-' | strip }}</li>
                     {% endif %}
                 {% endfor %}
+                {% if is_list_started %}
+                    </ul>
+                {% endif %}
             </div>
         {% endif %}
     </div>
     {% endfor %}
 </div>
 {% endif %}
-
 
 {% if site.collection_option['education']['visibility'] == true %}
 <div class="ap-line"></div>
