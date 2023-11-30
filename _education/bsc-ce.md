@@ -5,7 +5,7 @@ location: Isfahan, Iran
 duration: 2019 - Present
 gpa: "18.26/20.00 (3.82/4)"
 additional_info: "Last two years' GPA: 19.27/20.00 (3.9/4)"
-highlight: <u>3rd</u> highest GPA among 100 B.Sc. Computer Engineering students (class of 2023)
+highlight: <u>3rd</u> highest GPA among 100 B.Sc. Computer Engineering students
 courses:
   - Artificial Intelligence and Expert Systems (20/20)
   - Fundamentals of Computational Intelligence (20/20)
