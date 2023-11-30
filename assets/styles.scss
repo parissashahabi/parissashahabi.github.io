@@ -93,7 +93,7 @@ a:hover {
 
 .ap-content a {
     text-decoration: none;
-    color: #ff0000;
+    color: $link;
 }
 
 .ap-content a:hover {
@@ -571,11 +571,11 @@ a:hover {
 }
 
 .hollow-bullet-points {
-    list-style-type: circle;        /* Hollow bullet points */
-    list-style-position: inside;    /* Position bullets inside the list item area */
-    padding-left: 20px;             /* Indentation of the list */
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 20px;
 }
 
 .hollow-bullet-points li {
-    margin-left: 10px;              /* Additional indentation for list items if needed */
+    margin-left: 10px;
 }
