@@ -336,9 +336,10 @@ a:hover {
 }
 
 .ap-certification img {
-    max-width: 400;
+    width: 150px;
     height: auto;
-    border: 1px solid #ccc;
+    margin-top: 8px;
+    border-radius: 4px;
 }
 
 .ap-achievement {

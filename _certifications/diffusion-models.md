@@ -2,6 +2,6 @@
 title: <a href="https://learn.deeplearning.ai/diffusion-models">How Diffusion Models Work</a>
 institute: DeepLearning.AI
 year: 2023
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien vel sem tristique consequat ac eu magna. Nulla condimentum erat quis enim tempor consequat.
+excerpt: Acquired skills in constructing diffusion models from scratch, enhancing proficiency in generative AI and mastering the diffusion process for personalized image generation.
 order: 1
 ---
