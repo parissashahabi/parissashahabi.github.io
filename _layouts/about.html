@@ -166,9 +166,9 @@ layout: default
     <div class="ap-achievement">
         <p class="ap-achievement-title">{{ achievement.title }}</p>
         <p class="ap-achievement-year">{{ achievement.year }}</p>
-        <ul class="ap-achievement-excerpt">
-            {% for point in achievement.excerpt %}
-            <li>{{ point }}</li>
+        <ul class="hollow-bullet-points">
+            {% for item in achievement.excerpt %}
+            <li>{{ item }}</li>
             {% endfor %}
         </ul>
     </div>
