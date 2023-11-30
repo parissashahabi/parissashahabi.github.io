@@ -1,9 +1,9 @@
 ---
-title: Internship, IPM Institute For Research in Fundamental Sciences
+title: Internship, <a href="https://ipm.ac.ir/">IPM Institute For Research in Fundamental Sciences</a>
 duration: June 2023 - September 2023
 excerpt: |
   During my internship at IPM Institute For Research in Fundamental Sciences, I was involved in the following key activities:
-  - Developed an intelligent agent for the game "Soccer Stars" to compete with human players.
+  - Developed <a href="https://github.com/parissashahabi/Soccer-Stars-Game-Bot">an intelligent agent for the game "Soccer Stars"</a> to compete with human players.
   - Focused on key areas including computer vision, evolutionary algorithms, and physics simulation.
   - Utilized computer vision techniques for accurate perception and interpretation of game visuals.
   - Integrated a custom-trained YOLOv5 model for object detection.
