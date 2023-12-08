@@ -10,6 +10,7 @@ activities:
   - Implemented physics simulation to replicate and calculate in-game physics interactions
   - Optimized physics parameters via genetic algorithms for accurate in-game simulation
 demo: <button class="ap-demo-chip" onclick="window.open('https://github.com/parissashahabi/Soccer-Stars-Game-Bot', '_blank')">GeitHub Repo</button>
+document: <button class="ap-demo-chip" onclick="window.open('https://www.dropbox.com/scl/fi/3qnn80s7sk10luocdwvut/Game-Bot-Project.paper?rlkey=zj9k05lxfz3yg3xw6vjx00hw0&dl=0', '_blank')">Dropbox Paper</button>
 tags: [
     Computer Vision,
     Object Detection,
